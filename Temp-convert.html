@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="https://kit.fontawesome.com/74a4841d05.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="converter">
+        <div class="left-column">
+            <div class="Logo"><img src="Logo.png" alt="TempCon"></div>
+            <div class="input-container">
+                <label for="inputTemp">Enter Temperature:</label>
+                <input type="number" class="input01" id="inputTemp" placeholder="Enter temperature" />
+            </div>
+            <div class="unit-container">
+                <label for="fromUnit">From:</label>
+                <select id="fromUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="unit-container">
+                <label for="toUnit">To:</label>
+                <select id="toUnit">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <button id="convertBtn">Convert <i class="fa-solid fa-circle-arrow-right"></i></button>
+        </div>
+        <div class="right-column">
+            <div id="result">
+                <span class="result" id="convertedTemp">0</span> <span class="result" id="resultUnit">°C</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
