@@ -1,6 +1,17 @@
+
+:root{
+    --bg:#f2f2f2;
+    --white:#fff;
+    --lightgreen:#22A39F;
+    --darkgreen:#22a39f45;
+    --black:#000;
+    --darkgray:#333;
+    --lightgray:#ccc;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: var(--bg);
     margin: 0;
     padding: 0;
 }
@@ -8,11 +19,11 @@ body {
 .converter {
     display: flex;
     max-width: 800px;
-    margin: 11.3em auto;
-    border: 2px solid #22A39F;
+    margin: 10.5em auto;
+    border: 2px solid var(--lightgreen);
     border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 3px 3px #22a39f45;
+    background-color: var(--white);
+    box-shadow: 3px 3px var(--darkgreen);
 }
 
 .left-column {
@@ -42,7 +53,7 @@ body {
 }
 
 label {
-    color: #333;
+    color: var(--darkgray);
     font-weight: bold;
 }
 
@@ -55,15 +66,15 @@ select {
     width: 95%;
     margin-top: 0.6em;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--lightgray);
     border-radius: 3px;
 }
 
 button {
     margin: 1em 10em 0em;
 
-    background: black;
-    color: white;
+    background: var(--black);
+    color: var(--white);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -75,20 +86,20 @@ button {
 .fas {
     font-weight: 900;
     margin-left: 3px;
-    color: white;
+    color: var(--white);
 }
 
 button:hover {
-    background-color: #22A39F;
+    background-color: var(--lightgreen);
     color: rgb(255, 255, 255);
 }
 
 .right-column {
     flex: 1;
-    background-color: #22A39F;
+    background-color: var(--lightgreen);
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     border-radius: 0 5px 5px 0;
     align-items: center;
     display: flex;
